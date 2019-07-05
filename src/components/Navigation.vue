@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- navigation menu -->
     <div id="nav">
       <div id="title">
         <h2>My Vue App</h2>
@@ -12,6 +13,7 @@
       </div>
     </div>
     <router-view />
+    <!-- footer -->
     <footer>{{ copyright }}</footer>
   </div>
 </template>
@@ -20,6 +22,7 @@
 export default {
   data() {
     return {
+      // footer content
       copyright: "Copyright My Vue App 2019"
     };
   }

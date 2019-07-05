@@ -2,6 +2,7 @@
   <div class="contact">
     <h1>{{ title }}</h1>
     <div class="content contact">
+      <!-- address -->
       <div id="address">
         <h3>{{ subtOne }}</h3>
         <p>
@@ -15,9 +16,11 @@
           <br />
         </p>
       </div>
+      <!-- schedule -->
       <div id="schedule">
         <h3>{{ subtTwo }}</h3>
         <ul>
+          <!-- looping through the schedule -->
           <li v-for="(schedule, index) in schedules" :key="index">
             {{ schedule }}
           </li>
@@ -30,6 +33,7 @@
 export default {
   data() {
     return {
+      // return data for the page
       title: "Contact",
       subtOne: "Address",
       address: "1385 Woodroffe Avenue",
@@ -38,6 +42,7 @@ export default {
       country: "Canada",
       phone: "613-727-4723",
       subtTwo: "Hours of Operation",
+      // schedule array
       schedules: [
         "Monday: 8AM-6PM",
         "Tuesday: 8AM-6PM",

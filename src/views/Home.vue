@@ -2,7 +2,9 @@
   <div class="home">
     <h1>{{ title }}</h1>
     <div class="content">
+      <!-- image -->
       <div id="imgOne"></div>
+      <!-- text -->
       <div id="text">
         {{ textOne }}
         <br />
@@ -15,6 +17,7 @@
 <script>
 export default {
   data() {
+    // return data for the page
     return {
       title: "Welcome To My Vue App",
       textOne:

@@ -1,10 +1,12 @@
 <template>
   <div id="app">
+    <!-- displaying the navigation component -->
     <Navigation msg="This is a navigation" />
   </div>
 </template>
 
 <script>
+// importing navigation
 import Navigation from "./components/Navigation.vue";
 export default {
   components: {

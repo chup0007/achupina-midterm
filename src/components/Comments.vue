@@ -1,13 +1,17 @@
 <template>
+  <!-- displaying the comments -->
   <div id="comms">
     <div class="post" v-for="comment in comments">
       <b>
+        <!-- name - position -->
         <p>{{ comment.name }} - {{ comment.position }}</p>
       </b>
+      <!-- comment -->
       <p>{{ comment.comment }}</p>
     </div>
   </div>
 </template>
+
 <script>
 export default {
   props: {
@@ -18,13 +22,13 @@ export default {
   }
 };
 </script>
+
 <style>
 #comms {
   display: inline-grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
 }
-
 .post {
   border: 1px solid grey;
   width: 300px;
