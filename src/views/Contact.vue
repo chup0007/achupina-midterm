@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
     <h1>{{ title }}</h1>
-    <div class="content contact">
+    <div class="content cont">
       <!-- address -->
       <div id="address">
         <h3>{{ subtOne }}</h3>
@@ -61,10 +61,10 @@ export default {
   text-align: left;
 }
 
-.contact {
+.cont {
   justify-content: space-between;
-  width: 60%;
-  margin-left: 20%;
+  width: 50%;
+  margin-left: 25%;
 }
 
 #schedule {
